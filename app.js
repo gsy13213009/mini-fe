@@ -34,6 +34,8 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    serverUrl: 'http://127.0.0.1:8000',
+    apiVersion: '/api/v1.0'
   }
 })

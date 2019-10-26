@@ -14,20 +14,20 @@
     "list": [{
       "pagePath": "pages/index/index",
       "text": "首页",
-      "iconPath": "",
-      "selectedIconPath": ""
+      "iconPath": "images/icon_tabbar.png",
+      "selectedIconPath": "images/icon_tabbar.png"
     },
     {
       "pagePath": "pages/logs/logs",
       "text": "日志",
-      "iconPath": "",
-      "selectedIconPath": ""
+      "iconPath": "images/icon_tabbar.png",
+      "selectedIconPath": "images/icon_tabbar.png"
     },
     {
       "pagePath": "pages/menu/menu",
       "text": "应用",
-      "iconPath": "",
-      "selectedIconPath": ""
+      "iconPath": "images/icon_tabbar.png",
+      "selectedIconPath": "images/icon_tabbar.png"
     }]
   }
 }

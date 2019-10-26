@@ -1,4 +1,5 @@
 // pages/menu/menu.js
+const app = getApp();
 Page({
 
   /**
@@ -6,8 +7,8 @@ Page({
    */
   data: {
     grids: [
-      "1",
-      "2"
+      {"name":"应用1"},
+      { "name": "应用2" },
     ]
   },
 
@@ -15,7 +16,20 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    this.updateMenuData();
+  },
 
+  updateMenuData() {
+    var that = this;
+    wx.request({
+      url: app.globalData.serverUrl + app.globalData.apiVersion + '/menu',
+      success: function(res) {
+        var menuData = res.data.data
+        that.setData({
+          grids: menuData
+        })
+      }
+    })
   },
 
   /**
